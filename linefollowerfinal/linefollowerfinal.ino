@@ -104,7 +104,15 @@ if (linefinder.readSensor1()==0 && linefinder.readSensor2()==0)
 void checkforstop()
 {
 moveforward(300); 
-spincw(600); 
+spincw(250); 
+motor1.stop();
+motor2.stop();
+linesensor();
+if (value==1)
+  {
+    return; 
+  }
+spincw(300); 
 motor1.stop();
 motor2.stop();
 linesensor(); 
@@ -112,7 +120,15 @@ linesensor();
   {
     return; 
   }
-spinccw(1150);
+spinccw(600);
+motor1.stop();
+motor2.stop();
+linesensor(); 
+  if (value==1)
+  {
+    return; 
+  }
+spinccw(600);
 linesensor(); 
 if (value==1)
   {

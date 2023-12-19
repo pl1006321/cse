@@ -114,6 +114,13 @@ void navigate()
   spincw(700); 
   stopping(100);
   deadend();
+  if (right > left)
+  {
+    spincw(700);
+  }
+  if (left > right)
+  {
+    spinccw(750);
 }
 
 void frontdistance()

@@ -76,11 +76,11 @@ void spinnything()
   spinccw(800);
   motor1.stop();
   motor2.stop();
-  right = ultrasonic.distanceCm();
+  left = ultrasonic.distanceCm();
   spincw(1450);
   motor1.stop();
   motor2.stop();
-  left = ultrasonic.distanceCm();
+  right = ultrasonic.distanceCm();
   spinccw(800); 
   motor1.stop();
   motor2.stop();
@@ -99,15 +99,15 @@ void navigate()
 {
   spinccw(700);
   stopping(100);
-  right = ultrasonic.distanceCm();
-  if (right >= 7)
+  left = ultrasonic.distanceCm();
+  if (left >= 7)
   {
     return;
   }
   spincw(1100);
   stopping(100);
-  left = ultrasonic.distanceCm(); 
-  if (left >= 7)
+  right = ultrasonic.distanceCm(); 
+  if (right >= 7)
   {
     return;
   }

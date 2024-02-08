@@ -6,8 +6,22 @@ firstcolor = firstcolor.strip()
 secondcolor = secondcolor.lower()
 secondcolor = secondcolor.strip()
 
-colors = ['red', 'blue', 'yellow']
-if firstcolor != colors:
-    print("did this work")
+if (firstcolor != 'red' or firstcolor != 'yellow' or firstcolor != 'blue') or \
+(secondcolor != 'red' or secondcolor != 'yellow' or secondcolor != 'blue'):
+  pass
 else:
-    print("erm i dont think it works")
+  print('Please rerun the program and enter a valid color.')
+
+if (firstcolor == 'red' and secondcolor == 'yellow') or \
+(firstcolor == 'yellow' and secondcolor == 'red'):
+  print('Orange')
+elif (firstcolor == 'yellow' and secondcolor == 'blue') or \
+(firstcolor == 'blue' and secondcolor == 'yellow'):
+  print('Green')
+elif (firstcolor == 'red' and secondcolor == 'blue') or \
+(firstcolor == 'blue' and secondcolor == 'red'):
+  print('Purple')
+else:
+  print(firstcolor)
+  
+    

@@ -11,7 +11,11 @@ def play_again():
   choice = choice.lower()
   if choice == 'yes': 
     return(1)
+<<<<<<< HEAD
   elif choice == 'no':
+=======
+  if choice == 'no':
+>>>>>>> ef7bf16cc25ac72495743a4835bcd80d5d908627
     return(0)
 
 draw = 1
@@ -53,4 +57,8 @@ while bool(draw):
         play_again()
       else: 
         print('The computer chose scissors too! It\'s a draw!') 
+<<<<<<< HEAD
         draw = 1
+=======
+        draw = 1
+>>>>>>> ef7bf16cc25ac72495743a4835bcd80d5d908627

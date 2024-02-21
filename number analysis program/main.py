@@ -3,10 +3,18 @@
 # following data: the lowest number in the list, the highest number in the list, 
 # the total of the numbers in the list, and the average of the numbers 
 
-entry = str(input('Enter 20 numbers, each separated by a space: '))
-entry = entry.strip()
-userentry = entry.split(' ')
-# print(userentry)
+def userinput():
+  entry = str(input('Enter 20 numbers, each separated by a space: '))
+  entry = entry.strip()
+  entry = entry.split(' ')
+  return entry
+  # print(userentry)
+
+userentry = userinput()
+
+if len(userentry) != 20:
+  print("Please try again and enter 20 numbers.")
+  userentry = userinput()
 
 greatest = 0
 for x in userentry:

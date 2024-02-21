@@ -14,9 +14,9 @@ def lottery_generator():
     if num not in nums:
       nums.append(num)
   return nums
-  
+
 lotterynums = lottery_generator()
-print(lotterynums) 
+# print(lotterynums) 
 
 def userinput():
   entry = str(input('Enter 7 distinct numbers, each separated by a space: '))

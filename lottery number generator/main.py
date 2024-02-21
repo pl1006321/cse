@@ -24,7 +24,7 @@ def userinput():
   usernums = entry.split(' ')
   return usernums
 
-userentry = userinput() # do i need to do input validation...????
+userentry = userinput() 
 isusersped = 0
 
 for x in userentry:

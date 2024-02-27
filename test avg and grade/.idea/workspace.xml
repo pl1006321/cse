@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb56f66-7958-430f-8c71-a8338399ac37" name="Changes" comment="" />
+    <list default="true" id="cdb56f66-7958-430f-8c71-a8338399ac37" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../credentials/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../credentials/.idea/credentials.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../credentials/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../credentials/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../credentials/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../credentials/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../credentials/main.py" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

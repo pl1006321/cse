@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb56f66-7958-430f-8c71-a8338399ac37" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../credentials/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../credentials/.idea/credentials.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../credentials/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../credentials/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../credentials/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../credentials/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../credentials/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +21,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/Users/pl1006321/Documents/Arduino/cse/test avg and grade"
+  }
+}]]></component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="test avg and grade" />

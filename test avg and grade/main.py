@@ -25,4 +25,4 @@ for i in range(1, 6):
   scores.append(score)
   print('The grade is ' + determine_grade(score))
 
-print('The averages of the five scores are: ', str(calc_average(*scores)))
+print('The averages of the five scores are: ', str(calc_average(*scores))) #yippee 

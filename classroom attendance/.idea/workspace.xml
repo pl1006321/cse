@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="876edadd-9a72-4737-aaff-11065f02f332" name="Changes" comment="" />
+    <list default="true" id="7bb4cdfc-8267-4d59-a20b-bc2edf0c543e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../credentials_3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../credentials_3/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,15 +15,21 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2d5litrl9Lmz30D4sKw2eZB6Y9r" />
+  <component name="ProjectId" id="2eJxUAu8aw9lm6lQ3JAFIKnt3t3" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true"
+  }
+}]]></component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
-      <module name="credentials_3" />
+      <module name="classroom attendance" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -48,11 +53,11 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="876edadd-9a72-4737-aaff-11065f02f332" name="Changes" comment="" />
-      <created>1709305950774</created>
+      <changelist id="7bb4cdfc-8267-4d59-a20b-bc2edf0c543e" name="Changes" comment="" />
+      <created>1711636496062</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1709305950774</updated>
+      <updated>1711636496062</updated>
     </task>
     <servers />
   </component>

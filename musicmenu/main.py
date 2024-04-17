@@ -9,7 +9,7 @@ root.title("Song Selection Menu")
 info_label = Label(root, text='Select a song from the drop down list, then click play!')
 info_label.grid(row=1,column=1,padx=20,pady=10,sticky='news')
 
-ts_songs = ('Style (Taylor\'s Version) - Taylor Swift',
+songs = ('Style (Taylor\'s Version) - Taylor Swift',
          'Red (Taylor\'s Version) - Taylor Swift',
          'Love Story (Taylor\'s Version) - Taylor Swift',
          'Enchanted (Taylor\'s Version) - Taylor Swift',
@@ -20,7 +20,7 @@ ts_songs = ('Style (Taylor\'s Version) - Taylor Swift',
 selected_ts_song = StringVar()
 ts_song_combobox = ttk.Combobox(root,textvariable=selected_ts_song,width=40)
 ts_song_combobox.grid(row=2,column=1,columnspan=3,padx=20,pady=10)
-ts_song_combobox['values'] = ts_songs
+ts_song_combobox['values'] = songs
 ts_song_combobox['state'] = "readonly"
 
 buttons_frame = Frame(root)

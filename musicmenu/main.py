@@ -15,7 +15,10 @@ songs = ('Style (Taylor\'s Version) - Taylor Swift',
          'Enchanted (Taylor\'s Version) - Taylor Swift',
          'champagne problems - Taylor Swift',
          'You Belong with Me (Taylor\'s Version) - Taylor Swift',
-         'You\'re On Your Own Kid - Taylor Swift',)
+         'You\'re On Your Own Kid - Taylor Swift',
+         'deja vu - Olivia Rodrigo',
+         'Kahoot Theme Song - Kahoot',
+         )
 
 selected_ts_song = StringVar()
 ts_song_combobox = ttk.Combobox(root,textvariable=selected_ts_song,width=40)

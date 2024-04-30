@@ -1,6 +1,8 @@
 from tkinter import *
 from tkinter import messagebox
 from tkinter import ttk
+import serial
+import time
 
 root = Tk()
 root.geometry("450x200")
@@ -9,16 +11,7 @@ root.title("Song Selection Menu")
 info_label = Label(root, text='Select a song from the drop down list, then click play!')
 info_label.grid(row=1,column=1,padx=20,pady=10,sticky='news')
 
-songs = ('Style (Taylor\'s Version) - Taylor Swift',
-         'Red (Taylor\'s Version) - Taylor Swift',
-         'Love Story (Taylor\'s Version) - Taylor Swift',
-         'Enchanted (Taylor\'s Version) - Taylor Swift',
-         'champagne problems - Taylor Swift',
-         'You Belong with Me (Taylor\'s Version) - Taylor Swift',
-         'You\'re On Your Own Kid - Taylor Swift',
-         'deja vu - Olivia Rodrigo',
-         'Kahoot Theme Song - Kahoot',
-         )
+songs = ('Style (Taylor\'s Version) - Taylor Swift',)
 
 selected_ts_song = StringVar()
 ts_song_combobox = ttk.Combobox(root,textvariable=selected_ts_song,width=40)

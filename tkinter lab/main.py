@@ -22,11 +22,7 @@ compiled = {}
 root = Tk()
 root.geometry("700x400")
 root.title("Computer Science Student Information Entry")
-<<<<<<< HEAD
 root.resizable(False, False)
-=======
-# root.resizable(False, False)
->>>>>>> 64455ea6906057e4d119d94cdb3c2f4af8053257
 
 teachers_frame = Frame(root)
 teachers_frame.grid(row=4,column=1,rowspan=8,columnspan=2,sticky='NSWE')
@@ -67,20 +63,12 @@ current_courses_label.grid(row=1,column=4,padx=10,pady=5,sticky='wens')
 
 cse = IntVar()
 cse.set(0)
-<<<<<<< HEAD
 cse_checkbox = Checkbutton(root,text='Computer Science Essentials Honors',variable=cse)
-=======
-cse_checkbox = Checkbutton(root,text='Computer Science Essentials (Honors)',variable=cse)
->>>>>>> 64455ea6906057e4d119d94cdb3c2f4af8053257
 cse_checkbox.grid(row=2,column=4,padx=10,pady=5,sticky='W')
 
 pwp = IntVar()
 pwp.set(0)
-<<<<<<< HEAD
 pwp_checkbox = Checkbutton(root,text='Programming with a Purpose Honors',variable=pwp)
-=======
-pwp_checkbox = Checkbutton(root,text='Programming with a Purpose (Honors)',variable=pwp)
->>>>>>> 64455ea6906057e4d119d94cdb3c2f4af8053257
 pwp_checkbox.grid(row=3,column=4,padx=10,pady=5,sticky='W')
 
 apcsa = IntVar()
@@ -95,11 +83,7 @@ apcsp_checkbox.grid(row=5,column=4,padx=10,pady=5,sticky='W')
 
 cybersec = IntVar()
 cybersec.set(0)
-<<<<<<< HEAD
 cybersec_checkbox = Checkbutton(root,text='Cyber Security and Defense Honors',variable=cybersec)
-=======
-cybersec_checkbox = Checkbutton(root,text='Cyber Security and Defense (Honors)',variable=cybersec)
->>>>>>> 64455ea6906057e4d119d94cdb3c2f4af8053257
 cybersec_checkbox.grid(row=6,column=4,padx=10,pady=5,sticky='W')
 
 dataarch = IntVar()
@@ -122,11 +106,7 @@ internship.set(0)
 internship_checkbox = Checkbutton(root,text='Computer Science Internship Honors',variable=internship)
 internship_checkbox.grid(row=10,column=4,padx=10,pady=5,sticky='W')
 
-<<<<<<< HEAD
 # mr rivero, mr stern, mr baker, mrs demosthenes, mrs behar
-=======
-# mr rivero, mr stern, mr baker, mrs demosthenes, mrs behar 
->>>>>>> 64455ea6906057e4d119d94cdb3c2f4af8053257
 
 current_teacher = StringVar()
 current_teacher.set(0)
@@ -149,7 +129,6 @@ behar_button.grid(padx=20,pady=5,sticky='W')
 # buttons!
 
 def picklefile():
-<<<<<<< HEAD
   global compiled
   f=open("info.pkl",'wb')
   pickle.dump(compiled,f)
@@ -164,20 +143,6 @@ def loadfile():
 def class_selection():
     selected_classes= []
     if cse.get() > 0:
-=======
-    f=open("info.pkl",'wb')
-    pickle.dump(compiled,f)
-    f.close()
-
-def loadfile():
-    f=open('info.pkl','rb')
-    compiled=pickle.load(f)
-    f.close()
-
-def class_selection():
-    selected_classes= []
-    if cse.get() > 0: 
->>>>>>> 64455ea6906057e4d119d94cdb3c2f4af8053257
         selected_classes.append("Computer Science Essentials Honors")
     if pwp.get() > 0:
         selected_classes.append("Programming with a Purpose Honors")
@@ -200,42 +165,27 @@ def class_selection():
 def error_msg():
     messagebox.showinfo("Error","One or more fields has been left empty. Please enter all required fields and try again.")
 
-<<<<<<< HEAD
 def error_msg2():
     messagebox.showinfo("Error",'Student ID is not yet registered.')
 
-=======
->>>>>>> 64455ea6906057e4d119d94cdb3c2f4af8053257
 def save_info():
     global compiled
     if not id_number.get() or not selected_grade.get() or not full_name.get() or not current_teacher.get() or not class_selection():
         error_msg()
-<<<<<<< HEAD
         return 0
     compiled[id_number.get()] = template.copy()
-=======
-        return
-    compiled[id_number.get()] = template.copy() 
->>>>>>> 64455ea6906057e4d119d94cdb3c2f4af8053257
     compiled[id_number.get()]['Name'] = full_name.get()
     compiled[id_number.get()]['Grade'] = selected_grade.get()
     compiled[id_number.get()]['Current Teacher'] = current_teacher.get()
     compiled[id_number.get()]['Past / Current Courses'] = class_selection()
     picklefile()
-<<<<<<< HEAD
     return 1
-=======
->>>>>>> 64455ea6906057e4d119d94cdb3c2f4af8053257
 
 
 def show_info(idnumber):
     temp = compiled[idnumber]
     message = 'ID number: ' + str(idnumber) + '\n' + 'Full name: ' + temp['Name'] + '\n' + 'Current Grade: ' + temp['Grade'] + '\n' + 'Current Teacher: ' + temp['Current Teacher']
-<<<<<<< HEAD
     message = message + '\n' + 'Past / Current Courses: '
-=======
-    message = message + '\n' + 'Past / Current Courses: ' 
->>>>>>> 64455ea6906057e4d119d94cdb3c2f4af8053257
     for x in temp['Past / Current Courses']:
         if len(temp['Past / Current Courses']) == 1:
             message = message + x
@@ -244,12 +194,8 @@ def show_info(idnumber):
     messagebox.showinfo('Registered Info', message)
 
 def okay_function():
-<<<<<<< HEAD
     if not save_info():
         return
-=======
-    save_info()
->>>>>>> 64455ea6906057e4d119d94cdb3c2f4af8053257
     show_info(id_number.get())
     picklefile()
 
@@ -258,12 +204,9 @@ def lookup(idnumber):
         loadfile()
     except:
         pass
-<<<<<<< HEAD
     if idnumber not in compiled.keys():
         error_msg2()
         return
-=======
->>>>>>> 64455ea6906057e4d119d94cdb3c2f4af8053257
     show_info(idnumber)
 
 
@@ -280,15 +223,7 @@ schoolid = StringVar()
 id_entry = Entry(buttons_frame,textvariable=schoolid)
 id_entry.grid(row=1,column=4,padx=5,pady=5,sticky='e')
 
-<<<<<<< HEAD
 lookup_button = Button(buttons_frame,text='ID Lookup', command=lambda:lookup(str(schoolid.get())))
 lookup_button.grid(row=1,column=5,padx=5,pady=5,sticky='e')
 
 root.mainloop()
-print(compiled)
-=======
-lookup_button = Button(buttons_frame,text='ID Lookup',command=lambda:lookup(str(schoolid.get())))
-lookup_button.grid(row=1,column=5,padx=5,pady=5,sticky='e')
-
-root.mainloop()
->>>>>>> 64455ea6906057e4d119d94cdb3c2f4af8053257

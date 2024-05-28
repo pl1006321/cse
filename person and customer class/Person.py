@@ -22,3 +22,5 @@ class Person:
     def set_phone_num(self,phone_num):
         self.__phone_num = phone_num
 
+    def __str__(self):
+        return(f'Name: {self.__name} \nAddress: {self.__address}\nPhone number: {self.__phone_num}')

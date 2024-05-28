@@ -17,3 +17,6 @@ class Customer(Person):
 
     def set_mailing_list(self,mailing_list):
         self.__mailing_list = mailing_list
+
+    def __str__(self):
+        return(f'Name: {self.__name} \nAddress: {self.__address}\nPhone number: {self.__phone_num} \nCustomer number: {self.__customer_num} \nMailing list: {self.__mailing_list}')
